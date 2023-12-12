@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #555;
+    overflow: none;
+}
+
+header {
+    height: 25px;
+    border: solid 1px #777;
+}
+
+main {
+    min-height: 90vh;
+    border: solid 1px #aa0;
+    padding: 5px;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: 70px 150px 100px 50px;
+    grid-template-columns: 10% auto auto;
+    grid-template-areas:
+        "image searcher d"
+        ". menu d"
+        ". content d"
+        ". content d";
+    align-content: center;
+}
+
+main div {
+    border: solid 1px #777;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0.5em;
+    color: aliceblue;
+}
+
+main .image {
+    grid-area: image;
+}
+
+main .searcher {
+    grid-area: searcher;
+}
+
+main #procesar {
+    background-color: #a77;
+    width: 70px;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+}
+
+main .container {
+    border: solid 1px #777;
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+main .container .container_box {
+    border: solid 1px #a77;
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+main .container a {
+    text-decoration: none;
+}
+
+main .botones {
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 0.25rem;
+    padding: 2px;
+    cursor: pointer;
+    border: none;
+}
+
+main .content {
+    grid-area: content;
+}
+
+main .d {
+    grid-area: d;
+    color: #777;
+    background-color: aliceblue;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+main .d p {
+    justify-self: baseline;
+}
+
+main .d_box {
+    color: #aa0;
+    height: 42.5%;
+    max-width: inherit;
+    overflow-y: scroll;
+    border-color: red;
+}
+
+
+footer {
+    height: 25px;
+    border: solid 1px #777;
+}

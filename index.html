@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Texto JS</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="image">Imagen</div>
+        <div class="searcher">
+            Buscador
+            <input type="text" id="inputText" class="content.input" placeholder="Los usuarios van aquí" onkeyup="procesarLista();" ondblclick="selec" autofocus>
+            <button id="procesar" onclick="procesarLista()">Procesar</button>
+        </div>
+
+        <div class="container">
+            <div class="container_box" id="container_box_a">
+                Botones
+                <!-- <a href="http://">
+                    <span class="consulta">Consulta</span>
+                    <svg></svg>
+                </a> -->
+                <button class="botones" id="consulta" onclick="queri('gold')">Consulta</button>
+                <button class="botones" id="permiso" onclick="queri('blue')">Permiso</button>
+                <button class="botones" id="borrarUsuario" onclick="borrarUsuario()">borrarUsuario</button>
+                <!-- <a class="botones" id="consulta" href="" onclick="consulta()">Consulta</a>
+                <a href="" class="botones" id="permiso" onclick="permiso()">Permiso</a>
+                <a href="" class="botones" id="borrarUsuario" onclick="borrarUsuario()">borrarUsuario</a> -->
+                <!-- <button onclick="consulta()">Consulta</button> -->
+
+                <!-- Hasta aquí se ha logrado cambiar de color el texto de los botones,
+                así que, de la misma manera, habrá que probar con botones en lugar de
+                etiquetas a para seleccionar el tipo de función por query. -->
+
+                
+            </div>
+
+            <div class="container_box" id="container_box_b">B</div>
+
+            <div class="container_box" id="container_box_c">C</div>
+        </div>
+        <div class="content">
+            Contenido
+            <!-- <input type="text" id="inputText" class="content.input" placeholder="Los usuarios van aquí" onkeyup="procesarLista();">
+            <button id="procesar" onclick="procesarLista()">Procesar</button> -->
+            <!-- <div id="resultado"></div> -->
+        </div>
+
+        <div class="d">
+            Usuarios
+            <div class="d_box" id="resultado"></div>
+            <button id="copiar" onclick="copiarQueries()">Copiar</button>
+        </div>
+
+    </main>
+    <footer>
+    </footer>
+    <script src="./script.js">
+    </script>
+</body>
+</html>
